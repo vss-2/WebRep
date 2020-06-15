@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title>TwitchHub</title>
+		<link rel="stylesheet" href="styles.css"/>
+		<script src="scripts.js"></script>
+	</head>
+	<body>
+		<div class="config">
+			<section>
+				<nav>
+					<h3>Tema:</h3>
+				</nav>
+				<aside style="padding-right: 80px">
+					<label class="switch">
+						<input type="checkbox" onclick="darker()">
+						<span class="slider round"></span>
+					</label>
+				</aside>
+				<aside style="padding-right: 40px">
+					<input id="in_stream1" placeholder="Stream1">
+					<button name="bt_stream1" onclick="sintonizar(name)">OK!</button>
+				</aside>
+				<aside style="padding-right: 40px">
+					<input id="in_stream2" placeholder="Stream2">	
+					<button name="bt_stream2" onclick="sintonizar(name)">OK!</button>
+				</aside>
+				<aside style="padding-right: 40px">
+					<input id="in_stream3" placeholder="Stream3">
+					<button name="bt_stream3" onclick="sintonizar(name)">OK!</button>
+				</aside>
+			</section>
+		</div>
+		<br>
+			<div class="config">
+				<section>
+					<nav class="player">
+						<iframe
+							id="player1"
+							src="https://player.twitch.tv/?channel=p1som&parent=www.cin.ufpe.br/~vss2/"
+							frameborder="0"
+							allowfullscreen="true"
+							height="480px"
+							width="93%"
+						>
+						</iframe>
+					</nav>
+					<aside height="480px" width="93%">
+						<iframe 
+						name="chat1"
+						frameborder="0"
+						scrolling="true"
+						id="baiano"
+						src="https://www.twitch.tv/embed/p1som/chat?parent=www.cin.ufpe.br/~vss2/"
+						height="480px"
+						width="auto">
+					</iframe>
+					</aside><br>
+					<textarea>Anotações importantes aqui</textarea>
+
+
+				</section>
+			</div>
+		<br>
+		<div class="config">
+			<section>
+				<nav class="player">
+					<iframe
+						id="player2"
+						src="https://player.twitch.tv/?channel=p1som&parent=www.cin.ufpe.br/~vss2/"
+						frameborder="0"
+						allowfullscreen="true"
+						height="480px"
+						width="93%"
+					>
+					</iframe>
+				</nav>
+				<aside height="480px" width="93%">
+					<iframe 
+					name="chat2"
+					frameborder="0"
+					scrolling="true"
+					id="baiano"
+					src="https://www.twitch.tv/embed/p1som/chat?parent=www.cin.ufpe.br/~vss2/"
+					height="480px"
+					width="auto">
+				</iframe>
+				</aside><br>
+				<textarea>Anotações importantes aqui</textarea>
+
+
+			</section>
+		</div>
+		<br>
+		<div class="config">
+			<section>
+				<nav class="player">
+					<iframe
+						id="player3"
+						src="https://player.twitch.tv/?channel=p1som&parent=www.cin.ufpe.br/~vss2/"
+						frameborder="0"
+						allowfullscreen="true"
+						height="480px"
+						width="93%"
+					>
+					</iframe>
+				</nav>
+				<aside height="480px" width="93%">
+					<iframe 
+					name="chat3"
+					frameborder="0"
+					scrolling="true"
+					id="baiano"
+					src="https://www.twitch.tv/embed/p1som/chat?parent=www.cin.ufpe.br/~vss2/"
+					height="480px"
+					width="auto">
+				</iframe>
+				</aside><br>
+				<textarea>Anotações importantes aqui</textarea>
+			</section>
+		</div>
+	</body>
+</html>
