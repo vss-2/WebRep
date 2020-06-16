@@ -1,26 +1,25 @@
-document.body.style.backgroundColor = sessionStorage.getItem('bg');
-document.body.style.color = sessionStorage.getItem('cc');
-
 function darker() {
     if (sessionStorage.getItem('bg') === 'rgb(250, 250, 250)') {
 	
 	    sessionStorage.setItem('bg', 'rgb(89, 60, 110)');
 	    sessionStorage.setItem('cc', '#FFFFFF');
-	    
+
     }
     else if (sessionStorage.getItem('bg') == null || undefined) {
-	    sessionStorage.setItem('bg', 'rgb(66, 66, 80)');
+	    sessionStorage.setItem('bg', 'rgb(89, 60, 110)');
 	    sessionStorage.setItem('cc', '#FFFFFF');
-	
+
     }
     else if( sessionStorage.getItem('bg') === 'rgb(89, 60, 110)') {
 	
 	    sessionStorage.setItem('bg', 'rgb(250, 250, 250)');
 	    sessionStorage.setItem('cc', '#732AEA');
+
     }
     document.body.style.backgroundColor = sessionStorage.getItem('bg');
     document.body.style.color = sessionStorage.getItem('cc');
 };
+
 function sintonizar(name){
 	ttchanel = 'https://player.twitch.tv/?channel='
 	if(name == 'bt_stream1'){
